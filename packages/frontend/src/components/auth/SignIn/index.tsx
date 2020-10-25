@@ -1,8 +1,9 @@
 import React from "react";
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
+import Logo from "../../ui/Logo";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
-import Logo from "../ui/Logo";
+
 const SignInForm = () => {
   const { handleSubmit, register, errors } = useForm();
 

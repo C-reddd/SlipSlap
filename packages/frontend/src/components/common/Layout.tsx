@@ -5,12 +5,15 @@ type Props = {
   children: React.ReactNode;
 };
 
+function RoutePlaceholder() {
+  return <div>DAFDASFDAFADSFSADSFSAFDFSDFDSFASDFD</div>;
+}
 const Layout = ({ children }: Props) => {
   return (
     <div className="bg-gray-300">
       <div className="min-h-screen flex flex-col">
         <Header />
-        <Suspense fallback={<h1>loading</h1>}>{children}</Suspense>
+        <Suspense fallback={<RoutePlaceholder />}>{children}</Suspense>
       </div>
     </div>
   );
