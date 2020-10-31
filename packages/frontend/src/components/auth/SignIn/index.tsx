@@ -8,7 +8,6 @@ const SignInForm = () => {
   const { handleSubmit, register, errors } = useForm();
 
   const onSubmit = (data: any) => {
-    console.log(data);
   };
   return (
     <div className="max-w-md w-full">

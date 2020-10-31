@@ -6,7 +6,7 @@ const SignUpForm = () => {
   const { register, errors, handleSubmit, getValues } = useForm();
 
   const onSubmit = (data: Record<string, string>) => {
-    console.log(data);
+
   };
   return (
     <div className=" w-full mt-6">
